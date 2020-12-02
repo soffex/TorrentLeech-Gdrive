@@ -98,8 +98,8 @@ sudo docker run torrentleech-gdrive
 Simply clone the repository and run the main file:
 
 ```sh
-git clone https://github.com/SpEcHiDe/PublicLeech.git
-cd PublicLeech
+git clone https://github.com/gautamajay52/TorrentLeech-Gdrive
+cd TorrentLeech-Gdrive
 python3 -m venv venv
 . ./venv/bin/activate
 pip install -r requirements.txt
@@ -135,6 +135,8 @@ class Config(Config):
 * `DESTINATION_FOLDER`: Name of your folder in ur respective drive where you want to upload the files using the bot.
 
 * `OWNER_ID`: ID of the bot owner, He/she can be abled to access bot in bot only mode too(private mode).
+
+* `INDEX_LINK`
 
 ##### Set Rclone
 
@@ -220,6 +222,16 @@ and everythin except `[NAME]`
 
 * `CLONE_COMMAND_G`
 
+* `UPLOAD_COMMAND`
+
+* `RENEWME_COMMAND`
+
+* `SAVE_THUMBNAIL`
+
+* `CLEAR_THUMBNAIL`
+
+* `GET_SIZE_G`
+
 * `UPLOAD_AS_DOC`: Takes two option True or False. If True file will be uploaded as document. This is for people who wants video files as document instead of streamable.
 
 * `INDEX_LINK`: (Without `/` at last of the link, otherwise u will get error) During creating index, plz fill `Default Root ID` with the id of your `DESTINATION_FOLDER` after creating. Otherwise index will not work properly.
@@ -272,10 +284,10 @@ and everythin except `[NAME]`
 * `/renewme`: This will clear the remains of downloads which are not getting deleted after upload of the file or after /cancel command. 
 
 
-* [Only work with direct link and youtube link for now]It is like u can add custom name as prefix of the original file name.
+* ~Only work with direct link and youtube link for now~It is like u can add custom name as prefix of the original file name.
 Like if your file name is `gk.txt` uploaded will be what u add in `CUSTOM_FILE_NAME` + `gk.txt`
 
-Only works with direct link/youtube link.No magnet or torrent.
+~Only works with direct link/youtube link.No magnet or torrent.~
 
 And also added custom name like...
 
